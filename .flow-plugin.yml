@@ -1,0 +1,20 @@
+
+name: python_init
+version: 0.0.1
+language: python
+description: Python environment initialize
+public: true
+tags:
+  - python
+  - init
+inputs:
+  - name: FLOW_VERSION
+    editable: false
+outputs:
+  - name: FLOW_PYENV_VERSION
+  - name: FLOW_PYTHON_VERSION
+script_path: ./run.sh  
+  
+template: |  
+  
+  
