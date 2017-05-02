@@ -2,14 +2,17 @@
 name: python_init
 version: 0.0.1
 language: python
-description: Python environment initialize
+description:"
+  本插件主要是用作初始化本flow的Python环境和输出环境变量（包括项目相关的变量和Python相关的变量），
+例如 `FLOW_PROJECT_NAME`存的就是项目的名称
+ 
+- 注意事项
+  此插件必须放在flow的第一个，否则会出现Python的环境问题"
 public: true
 tags:
   - python
   - init
 inputs:
-  - name: FLOW_VERSION
-    editable: false
 outputs:
   - name: FLOW_PYENV_VERSION
   - name: FLOW_PYTHON_VERSION
